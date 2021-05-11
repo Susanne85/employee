@@ -4,7 +4,7 @@ class Employee {
         this.name = name;
         this.id = id;
         this.email = email;
-
+ 
         if (this.name === undefined) {
             throw 'No name input';
         } else if (this.name === ' ') {
@@ -48,7 +48,7 @@ class Employee {
     }
 
     getRole(){
-        return "Employee";
+        return this.constructor;
     }
 }
 

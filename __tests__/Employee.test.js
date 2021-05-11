@@ -54,6 +54,7 @@ describe(`employee`, () => {
         });
         it("throws an error if getRole does not return Employee for the object that invoked it",() => {
             const sue = new Employee('Susanne', '1234', 'xkqk2010@gmail.com');
+            sue.constructor = "Employee";
             expect(sue.getRole()).toEqual('Employee');
         });
     })
