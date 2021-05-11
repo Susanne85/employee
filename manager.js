@@ -14,6 +14,7 @@ class Manager extends Employee {
             throw 'Office number must be a number'
         }
 
+        this.constructor = 'Manager';
 
     }
 }
