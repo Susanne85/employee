@@ -1,12 +1,15 @@
 
 
 const inquirer = require('inquirer');
-const Employee = require('./lib/employee');
+const writeFile = require('fs');
+const Employee = require('./lib/employee.js');
+const path = require('path');
+const Engineer = require('./lib/engineer.js');
+const Intern   = require('./lib/intern.js');
+const Manager  = require('./lib/manager.js');
 
-const Engineer = require('./lib/engineer');
-const Intern = require('./lib/intern');
-const Manager = require('./lib/manager');
-
+const generateReport = require('./lib/generateReport.js');
+ 
 // 1.  Start with creating a Team Manger
 // 2.  At the end of Team Manager, then present with menu questions of Do you want to create an Engineer or an Intern. 
 // 4.  If you want to creat an Intern
@@ -15,6 +18,7 @@ const Manager = require('./lib/manager');
 // 7.  If you want to create an Engineer then call create Engineer function
 
 const employees = [];
+
 const checkEmployeeInput = (value) => {
     if (value != '') {
         if (value.length < 2) {
@@ -187,7 +191,10 @@ function mainMenu() {
         } else {
             //goto generateReport
             console.log('MainMenu employees array ', employees);
-            console.log('MainMenu employees array length ', employees.length);
+            //console.log('MainMenu employees array length ', employees.length);
+            const reportEmployees = generateReport(employees);
+            //console.log('Report', reportEmployees);
+            writeFile.writeFileSync(path.join(__dirname, 'dist', 'report.HTML'), reportEmployees, 'utf-8');
         }
     })
 }
