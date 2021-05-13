@@ -1,11 +1,11 @@
 
 
-const Employee = require("../employee.js");
+const Employee = require("../lib/employee.js");
 
 describe(`employee`, () => {
     describe(`employee name`, () => {
         it("throws an error when it receives an empty string for name", () => {
-            expect(() => { new Employee(' ') }).toThrow('Enter a name')
+            expect(() => { new Employee(' ') }).toThrow('Enter text for a name')
         });
         it("throws an error when it receives a name that has a length of one for name", () => {
             expect(() => { new Employee('x') }).toThrow('Name must be more than one character')
@@ -24,7 +24,7 @@ describe(`employee`, () => {
             expect(() => { new Employee('Sue', '12', ' ') }).toThrow('Enter an email address')
         });
         it("throws an error when it receives an string without an @ in the email address", () => {
-            expect(() => { new Employee('Sue', '12', 'suegmail.com') }).toThrow('Enter a valid email address')
+            expect(() => { new Employee('Sue', '12', 'suegmail.com') }).toThrow('A valid email contains an "@", enter a valid email address')
         });
     })
     describe(`employee functions`, () => { 

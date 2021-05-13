@@ -1,11 +1,11 @@
 
 
-const Engineer = require("../engineer.js");
+const Engineer = require("../lib/engineer.js");
 
 describe(`engineer`, () => {
     describe(`engineer name`, () => {
         it("throws an error when it receives an empty string for name", () => {
-            expect(() => { new Engineer(' ') }).toThrow('Enter a name')
+            expect(() => { new Engineer(' ') }).toThrow('Enter text for a name')
         });
         it("throws an error when it receives a name that has a length of one for name", () => {
             expect(() => { new Engineer('x') }).toThrow('Name must be more than one character')
@@ -24,12 +24,12 @@ describe(`engineer`, () => {
             expect(() => { new Engineer('Sue', '12', ' ') }).toThrow('Enter an email address')
         });
         it("throws an error when it receives an string without an @ in the email address", () => {
-            expect(() => { new Engineer('Sue', '12', 'suegmail.com') }).toThrow('Enter a valid email address')
+            expect(() => { new Engineer('Sue', '12', 'suegmail.com') }).toThrow('A valid email contains an "@", enter a valid email address')
         });
     });
     describe(`engineer github`, () => {
         it("throws an error when it receives an empty string for GitHub name", () => {
-             expect(() => { new Engineer('Sue', '12', 'xkqk2010@gmail.com', ' ') }).toThrow('Enter a GitHub name')
+             expect(() => { new Engineer('Sue', '12', 'xkqk2010@gmail.com', ' ') }).toThrow('Some text must be entered, please enter a GITHUB Nam')
         });
     });
     describe(`manager functions`, () => {

@@ -1,10 +1,10 @@
 
-const Manager = require("../manager.js");
+const Manager = require("../lib/manager.js");
 
 describe(`manager`, () => {
     describe(`manager name`, () => {
         it("throws an error when it receives an empty string for name", () => {
-            expect(() => { new Manager(' ') }).toThrow('Enter a name')
+            expect(() => { new Manager(' ') }).toThrow('Enter text for a name')
         });
         it("throws an error when it receives a name that has a length of one for name", () => {
             expect(() => { new Manager('x') }).toThrow('Name must be more than one character')
@@ -23,12 +23,12 @@ describe(`manager`, () => {
             expect(() => { new Manager('Sue', '12', ' ') }).toThrow('Enter an email address')
         });
         it("throws an error when it receives an string without an @ in the email address", () => {
-            expect(() => { new Manager('Sue', '12', 'suegmail.com') }).toThrow('Enter a valid email address')
+            expect(() => { new Manager('Sue', '12', 'suegmail.com') }).toThrow('A valid email contains an "@", enter a valid email address')
         });
     });
     describe(`manager office number`, () => {
         it("throws an error when it receives an empty string for office number", () => {
-            expect(() => { new Manager('Sue', '12', 'xkqk2010@gmail.com',' ') }).toThrow('Enter an office number')
+            expect(() => { new Manager('Sue', '12', 'xkqk2010@gmail.com',' ') }).toThrow('Office number cannot be null, enter an office number')
         });
         it("throws an error when the office number is not a number", () => {
             expect(() => { new Manager('Sue', '12', 'xkqk2010@gmail.com','x1') }).toThrow('Office number must be a number')
