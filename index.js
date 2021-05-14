@@ -9,6 +9,8 @@ const Intern   = require('./lib/intern.js');
 const Manager  = require('./lib/manager.js');
 
 const generateReport = require('./lib/generateReport.js');
+
+//Copied lines 22 to 179 into a file called questions.js, and then const Questions = require('./lib/questions.js')
  
 // 1.  Start with creating a Team Manger
 // 2.  At the end of Team Manager, then present with menu questions of Do you want to create an Engineer or an Intern. 
@@ -190,11 +192,8 @@ function mainMenu() {
             createIntern();
         } else {
             //goto generateReport
-            console.log('MainMenu employees array ', employees);
-            //console.log('MainMenu employees array length ', employees.length);
             const reportEmployees = generateReport(employees);
-            //console.log('Report', reportEmployees);
-            writeFile.writeFileSync(path.join(__dirname, 'dist', 'report.HTML'), reportEmployees, 'utf-8');
+            writeFile.writeFileSync(path.join(__dirname, 'dist', 'report.html'), reportEmployees, 'utf-8');
         }
     })
 }
