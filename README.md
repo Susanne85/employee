@@ -26,9 +26,8 @@ The link to the GITHUB page for this application is : https://github.com/Susanne
 These videos are google drive links.  The first video is a demonstration of the My Team Profile application demonstrating Jest and the test packages that I have written, and the execution of the application and the html written to the folder dist.  The second video shows the generated HTML in the browser.                                                
  
 <a href="https://drive.google.com/uc?export=view&id=1H0bUh-MvZCXvmD1DHbxJ-bdEnVbZFfce"><img src="https://drive.google.com/uc?export=view&id=1H0bUh-MvZCXvmD1DHbxJ-bdEnVbZFfce" title="Team Profile invocation"/>
- 
 
-<a href="https://drive.google.com/uc?export=view&id=1RrZQtymMlBzMl6ke4zZE88pd39wu1Crr"><img src="https://drive.google.com/uc?export=view&id=1RrZQtymMlBzMl6ke4zZE88pd39wu1Crr" title="Team Profile Browser Display"/>
+<a href="https://drive.google.com/uc?export=view&id=1Bk1mBmZNHpaIeZn3FkAFPp09FpvPfflg/"><img src="https://drive.google.com/uc?export=view&id=1Bk1mBmZNHpaIeZn3FkAFPp09FpvPfflg/" title="Team Profile Browser Display"/>
 []()
 
 **Liscense**
