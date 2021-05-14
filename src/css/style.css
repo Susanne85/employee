@@ -1,7 +1,4 @@
 
-h2 {
-    font-weight: bold;
-}
 .columns {
     flex-wrap: wrap;
     justify-content: center;
@@ -17,4 +14,6 @@ h2 {
     background-color: #bfbfbd;
     color: black;
     font-weight: bold;
+    height: 100%;
+    width:100%;
 }
