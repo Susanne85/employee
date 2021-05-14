@@ -23,11 +23,12 @@ The link to the GITHUB page for this application is : https://github.com/Susanne
 
 **Application Display**
 
-These videos are google drive links.  The first video is a demonstration of the README generation when data is entered for all questions, the second videowhen minimal data is entered.                                                
+These videos are google drive links.  The first video is a demonstration of the My Team Profile application demonstrating Jest and the test packages that I have written, and the execution of the application and the html written to the folder dist.  The second video shows the generated HTML in the browser.                                                
+ 
+<a href="https://drive.google.com/uc?export=view&id=1H0bUh-MvZCXvmD1DHbxJ-bdEnVbZFfce"><img src="https://drive.google.com/uc?export=view&id=1H0bUh-MvZCXvmD1DHbxJ-bdEnVbZFfce" title="Team Profile invocation"/>
+ 
 
-<a href="https://drive.google.com/uc?export=view&id=1_ij3_5z3lcrz_IYuHmr3ML_qyIPJnqlP"><img src="https://drive.google.com/uc?export=view&id=1_ij3_5z3lcrz_IYuHmr3ML_qyIPJnqlP" title="README video"/>
-
-<a href="https://drive.google.com/uc?export=view&id=1g-1PIe9mTvqCn-NL75bLBO0MNlMtLQh0"><img src="https://drive.google.com/uc?export=view&id=1g-1PIe9mTvqCn-NL75bLBO0MNlMtLQh0" title="README video minimal data"/>
+<a href="https://drive.google.com/uc?export=view&id=1RrZQtymMlBzMl6ke4zZE88pd39wu1Crr"><img src="https://drive.google.com/uc?export=view&id=1RrZQtymMlBzMl6ke4zZE88pd39wu1Crr" title="Team Profile Browser Display"/>
 []()
 
 **Liscense**
